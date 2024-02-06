@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import './App.css'
 import { Toolbar } from './components/common/toolbar/Toolbar.jsx'
 import { Landing } from './components/landing/Landing.jsx'
 
