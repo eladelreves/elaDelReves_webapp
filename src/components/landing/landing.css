@@ -1,4 +1,4 @@
-#middleContainer{
+#mainContainer{
     align-items: center;
     justify-content: center;
     display: flex;
@@ -6,17 +6,17 @@
     text-align: center;
 }
 
-#middleContainer > img {
+#mainContainer > img {
     padding: 20px;
     width: 750px;
 }
 
-#middleContainer > h1 {
+#mainContainer > h1 {
     font-size: 30pt;
     padding-bottom: 20px;
 }
 
-#middleContainer p {
+#mainContainer p {
     font-size: 16pt;
 }
 
