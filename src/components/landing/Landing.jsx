@@ -9,7 +9,7 @@ export function Landing() {
             <h1>¡Cambiemos la historia juntos: ELA del Revés!</h1>
 
             <p>
-                El proyecto en el que hemos estado trabajando es una iniciativa en colaboración con la <span className='green'>ELA</span> para crear una plataforma en línea que brinde recursos, información y apoyo a pacientes y familias afectados por la enfermedad.
+                El proyecto en el que hemos estado trabajando es una iniciativa en colaboración con la <span className='elaGreen'>ELA</span> para crear una plataforma en línea que brinde recursos, información y apoyo a pacientes y familias afectados por la enfermedad.
             </p>
 
             <p>

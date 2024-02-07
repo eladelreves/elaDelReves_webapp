@@ -3,6 +3,10 @@
     src: url(assets/media/font/Poppins-Regular.ttf);
 }
 
+:root {
+    --elaGreen: #68B54C; /* Puedes cambiar #ff0000 por el código hexadecimal del color que desees */
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,6 +16,6 @@
     font-family: Poppins;
 }
 
-.green{
-    color: #68B54C;
+.elaGreen{
+    color: var(--elaGreen);
 }
