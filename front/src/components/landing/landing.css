@@ -1,0 +1,22 @@
+#middleContainer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#middleContainer > img {
+    padding: 20px;
+    width: 750px;
+}
+
+#middleContainer > h1 {
+    font-size: 30pt;
+    padding-bottom: 20px;
+}
+
+#middleContainer p {
+    font-size: 16pt;
+}
+

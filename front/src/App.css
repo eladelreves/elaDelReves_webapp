@@ -1,7 +1,18 @@
+@font-face {
+    font-family: Poppins;
+    src: url(assets/media/font/Poppins-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     list-style: none;
     padding: 0;
     text-decoration: none;
+    font-family: Poppins;
 }
+
+.green{
+    color: #68B54C;
+}
+
