@@ -93,6 +93,21 @@ export function Landing() {
                     </p>
                 </section>
             </div>
+            <div id='laEla'>
+                <h2>La <span className='elaGreen'>ELA</span></h2>
+                <section>
+                    <p>"Frase aleatoria curiosa del <span className='elaGreen'>ELA</span> cogida desde Base de Datos"</p>
+                    <p>
+                        Los <span className='elaGreen'>objetivos</span> y <span className='elaGreen'>metas</span> del proyecto son mejorar la calidad de vida de las personas afectadas por la <span className='elaGreen'>ELA</span>, brindar recursos y apoyo a la comunidad de la <span className='elaGreen'>ELA</span> en todo el mundo y aumentar la concientización sobre la enfermedad y su impacto en la sociedad. Además, queremos fomentar la colaboración y el intercambio de información entre los pacientes y los profesionales de la salud para mejorar el tratamiento y la atención de la <span className='elaGreen'>ELA</span>.
+                    </p>
+                </section>
+            </div>
+            <div id='Blog'>
+                <h2>El <span className='elaGreen'>blog</span></h2>
+                <section>
+                    <p>Carrusel de fotos de blog que vayan pasando</p>
+                </section>
+            </div>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </>
     );
