@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import './landing.css';
 import LogoEla from './../../assets/media/img/landingPage/LogoEla.png';
 

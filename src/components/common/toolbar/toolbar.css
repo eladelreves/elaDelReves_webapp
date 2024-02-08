@@ -32,9 +32,8 @@ header {
 header > nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
-    margin-left: 50px;
     width: 55%;
 }
 

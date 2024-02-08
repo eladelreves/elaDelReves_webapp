@@ -7,7 +7,7 @@ export function Toolbar(){
         <header>
             <nav>
                 <ul>
-                    <li><Link to="/" className='selectedLi'>Inicio</Link></li>
+                    <li><Link to="/" className='selectedLi'>Home</Link></li>
                     <li><Link to="/">La Ela</Link></li>
                     <li><Link to="/">Blog</Link></li>
 
