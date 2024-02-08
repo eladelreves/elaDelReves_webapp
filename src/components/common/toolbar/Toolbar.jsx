@@ -15,7 +15,7 @@ export function Toolbar(){
 
                     <li><Link to="/">Únete</Link></li>
                     <li><Link to="/">Del Revés</Link></li>
-                    <li><Link to="/">Extra</Link></li>
+                    <li><Link to="/">Login</Link></li>
                 </ul>
             </nav>
         </header>

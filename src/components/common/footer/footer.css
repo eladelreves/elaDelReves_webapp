@@ -1,4 +1,4 @@
-#footer {
+footer {
     width: 100%;
 
     padding: 25px 0;
@@ -11,7 +11,7 @@
     background-color: var(--elaGreen);
 }
 
-#footer #info {
+footer #info {
     width: 100%;
 
     padding-top: 50px;
@@ -22,7 +22,7 @@
     flex-wrap: wrap;
 }
 
-#footer #info > div {
+footer #info > div {
     width: 350px;
     height: 100px;
 
@@ -36,36 +36,36 @@
     color: white;
 }
 
-#footer #info h4 {
+footer #info h4 {
     color: white;
     text-decoration: underline;
 }
 
-#footer #info #help a {
+footer #info #help a {
     color: #939393;
 }
 
-#footer #info #help a:hover {
+footer #info #help a:hover {
     color: white;
 }
 
-#footer #info #imgFooter {
+footer #info #imgFooter {
     align-items: center;
 }
 
-#footer #info #imgFooter a {
+footer #info #imgFooter a {
     width: 100%;
     text-align: center;
 }
 
-#footer #info #imgFooter img{
+footer #info #imgFooter img{
     width: 50%;
     height: auto;
 }
 
-#footer #info #contactFooter h4{text-align: right;}
+footer #info #contactFooter h4{text-align: right;}
 
-#footer #info #contactFooter div {
+footer #info #contactFooter div {
     width: 100%;
 
     display: flex;
@@ -73,16 +73,16 @@
     align-items: center;
 }
 
-#footer #info #contactFooter div span:first-child {
+footer #info #contactFooter div span:first-child {
     margin-right: 10px;
 }
 
-#footer #copyright {
+footer #copyright {
     margin-top: 50px;
     color: white;
 }
 
-#footer #copyright a {
+footer #copyright a {
     color: white;
     text-decoration: underline;
 }
