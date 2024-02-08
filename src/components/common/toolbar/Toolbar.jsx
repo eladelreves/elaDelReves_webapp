@@ -15,7 +15,7 @@ export function Toolbar({ config }){
                     <li><Link to="/">La Ela</Link></li>
                     <li><Link to="/">Blog</Link></li>
 
-                    <li><img src={config.imagePath + 'logo_main.png'} alt="" /></li>
+                    <li><img src={config.imagePath + 'logo_main.png'} alt="Imagen Configuracion" /></li>
 
                     <li><Link to="/">Únete</Link></li>
                     <li><Link to="/">Del Revés</Link></li>
