@@ -1,7 +1,12 @@
 import './footer.css'
+import PropTypes from 'prop-types';
 
-export function Footer(){
-    const imagesPath = import.meta.env.REACT_APP_IMAGE_PATH
+Footer.propTypes = {
+    config: PropTypes.object
+};
+
+export function Footer ({ config }){
+    console.log(config.imagePath + 'logo_centerTie.png');
     return(
         <footer>
             <div id="info">
@@ -10,12 +15,12 @@ export function Footer(){
                     <a href="">Avisos legales</a>
                     <a href="">Protección de datos</a>
                     <a href="">Política de privacidad</a>
-                    <a href="">Cookies</a>
+                    <a href="">Cookies</a>+
                 </div>
 
                 <div id="imgFooter">
                     <a href="#" id="goToTopLink">
-                        <img src={imagesPath} alt=""/>
+                        <img src={config.imagePath + 'logo_centerTie.png'} alt=""/>
                     </a>
                 </div>
 

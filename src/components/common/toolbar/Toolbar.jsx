@@ -1,8 +1,12 @@
-import './toolBar.css'
+import './toolbar.css'
 import { Link } from 'react-router-dom'
-import LogoEla from './../../../assets/media/img/landingPage/LogoEla.png'; 
+import PropTypes from 'prop-types';
 
-export function Toolbar(){
+Toolbar.propTypes = {
+    config: PropTypes.object
+};
+
+export function Toolbar({ config }){
     return(
         <header>
             <nav>
@@ -11,7 +15,7 @@ export function Toolbar(){
                     <li><Link to="/">La Ela</Link></li>
                     <li><Link to="/">Blog</Link></li>
 
-                    <li><img src={LogoEla} alt="" /></li>
+                    <li><img src={config.imagePath + 'logo_main.png'} alt="" /></li>
 
                     <li><Link to="/">Únete</Link></li>
                     <li><Link to="/">Del Revés</Link></li>
