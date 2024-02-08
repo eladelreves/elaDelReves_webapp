@@ -1,17 +1,22 @@
-#mainContainer{
+#stickyContainer{
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     text-align: center;
-    overflow: hidden;
 }
 
-#mainContainer > img {
+#stickyContainer > div {
+    height: 1000px;
+}
+
+#stickyContainer img {
     padding: 20px;
     filter: drop-shadow(16px 7px 8px #939393);
-    margin-top: 100px;
-    width: 920px;
+    margin-top: 200px;
+    width: 650px;
+    position: sticky;
+    top: 100px;
 }
 
 #mainContainer > h1 {
@@ -21,13 +26,18 @@
 }
 
 #mainContainer > section {
-    margin-top: 210px;
+    margin-top: 50px;
     font-size: 16pt;
 }
 
-.rotating-image {
-    width: 100%;
-    height: auto;
-    transform-origin: center center; /* Define el punto de origen de la rotación */
-    transition: transform 0.5s ease; /* Agrega una transición suave a la rotación */
-  }
+#mainContainer > section > p{
+    padding-top: 30px;
+}
+
+#mainContainer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

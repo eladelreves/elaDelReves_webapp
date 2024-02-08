@@ -4,7 +4,7 @@
 }
 
 :root {
-    --elaGreen: #68B54C; /* Puedes cambiar #ff0000 por el código hexadecimal del color que desees */
+    --elaGreen: #68B54C;
 }
 
 * {
@@ -16,6 +16,6 @@
     font-family: Poppins;
 }
 
-.elaGreen{
+.elaGreen {
     color: var(--elaGreen);
 }
