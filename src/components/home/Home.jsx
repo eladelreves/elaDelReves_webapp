@@ -18,8 +18,8 @@ export function Home({ config }) {
     }, []);
 
     const handleArrowClick = () => {
-        const mainContainer = document.getElementById('mainContainer');
-        mainContainer.scrollIntoView({ behavior: 'smooth', block: 'start'});
+        const introContainer = document.getElementById('introContainer');
+        introContainer.scrollIntoView({ behavior: 'smooth', block: 'start'});
     };
 
     useEffect(() => {
