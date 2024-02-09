@@ -61,6 +61,10 @@ nav > ul > li a {
     transition: all 0.7s;
 }
 
+nav > ul > li > a > span {
+    color: var(--elaGreen);
+}
+
 nav > ul > li > a:hover {
     font-weight: 500;
     transform: scale(1.3);

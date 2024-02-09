@@ -1,16 +1,21 @@
 import { useEffect, useRef } from 'react';
-import './landing.css';
+import './home.css';
 import PropTypes from 'prop-types';
+import { changePage } from '../../services/changePage';
 
-Landing.propTypes = {
+Home.propTypes = {
     config: PropTypes.object
 };
 
-export function Landing({ config }) {
+export function Home({ config }) {
     const logoRef = useRef(null);
     const elementsRef = useRef([]);
     const h2Ref = useRef(null);
     const arrowRef = useRef(null);
+
+    useEffect(() => {
+        changePage('home');
+    }, []);
 
     const handleArrowClick = () => {
         const mainContainer = document.getElementById('mainContainer');
@@ -103,7 +108,7 @@ export function Landing({ config }) {
                 <h2 ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">La <span className='elaGreen'>ELA</span></h2>
                 <section>
                     <p ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">"Frase aleatoria curiosa del <span className='elaGreen'>ELA</span> cogida desde Base de Datos"</p>
-                    <img ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll" src={config.imagePath + 'elaDay.jpg'}  alt="" />
+                    <img id='elaDay' ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll" src={config.imagePath + 'elaDay.png'}  alt="" />
                     <p ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">
                         Los <span className='elaGreen'>objetivos</span> y <span className='elaGreen'>metas</span> del proyecto son mejorar la calidad de vida de las personas afectadas por la <span className='elaGreen'>ELA</span>, brindar recursos y apoyo a la comunidad de la <span className='elaGreen'>ELA</span> en todo el mundo y aumentar la concientización sobre la enfermedad y su impacto en la sociedad. Además, queremos fomentar la colaboración y el intercambio de información entre los pacientes y los profesionales de la salud para mejorar el tratamiento y la atención de la <span className='elaGreen'>ELA</span>.
                     </p>

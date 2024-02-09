@@ -6,43 +6,54 @@ Footer.propTypes = {
 };
 
 export function Footer ({ config }){
-    console.log(config.imagePath + 'logo_centerTie.png');
+    const handleClick = (event) => {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
     return(
         <footer>
-            <div id="info">
-                <div id="help">
-                    <h4>Ayuda</h4>
+            <div id="footerData">
+                <div id="info">
+                    <h4>Información</h4>
                     <a href="">Avisos legales</a>
                     <a href="">Protección de datos</a>
                     <a href="">Política de privacidad</a>
-                    <a href="">Cookies</a>+
+                    <a href="">Cookies</a>
                 </div>
 
-                <div id="imgFooter">
-                    <a href="#" id="goToTopLink">
-                        <img src={config.imagePath + 'logo_centerTie.png'} alt=""/>
+                <div id="goToTopLink">
+                    <a href="#" onClick={handleClick}>
+                        <span className='icon-arrow_upward'></span>
+                    </a>
+                    <a href="#" onClick={handleClick}>
+                        <img src={config.imagePath + 'logo_centerTie_White.png'} alt=""/>
                     </a>
                 </div>
 
-                <div id="contactFooter">
+                <div id="contactData">
                     <h4>Datos de Contacto</h4>
                     <div>
                         <span className="icon-mail2"></span>
-                        <span>fisioterapianeros@gmail.com</span>
+                        <span>eladelreves@gmail.com</span>
                     </div>
+
                     <div>
-                        <span className="icon-phone"></span>
-                        <span>916 034 590</span>
+                        <span className="icon-instagram"></span>
+                        <a href='https://www.instagram.com/eladelreves/'>@eladelreves</a>
                     </div>
+
                     <div>
-                        <span className="icon-whatsapp"></span>
-                        <span>+34 640 064 623</span>
+                        <span className="icon-linkedin"></span>
+                        <span>/eladelreves/</span>
                     </div>
                 </div>
             </div>
-            <div id="copyright">
-                <span>Copyright 2023 © | Designed By <a href="">brodevs</a></span>
-            </div>
+
+            <span id='copyright'>Copyright 2024 © | Designed By <a href="">kikario</a></span>
         </footer>
     )
 }
