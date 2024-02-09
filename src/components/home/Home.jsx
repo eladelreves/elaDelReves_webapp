@@ -81,11 +81,11 @@ export function Home({ config }) {
                 <div>
                     <img ref={logoRef} src={config.imagePath + 'logo_main.png'} alt="Logo de ELA"/>
                     <h2 ref={h2Ref}>Sigue bajando para ayudarnos!</h2>
-                    <div ref={arrowRef} className="arrow" onClick={handleArrowClick}></div>
+                    <div ref={arrowRef} id="arrow" onClick={handleArrowClick}></div>
                 </div>
             </div>
             
-            <div id='mainContainer'>
+            <div id='introContainer'>
                 <h1 ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">
                     ¡Cambiemos la historia juntos: <span className='elaGreen'>ELA</span> del Revés!
                 </h1>
