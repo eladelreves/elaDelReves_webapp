@@ -1,0 +1,47 @@
+.newsTemplate {
+    border: 2px solid;
+    border-radius: 10px;
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+    background-image: url('/src/assets/media/img/news/matchDay.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin-bottom: 50px;
+    position: relative; 
+
+    height: 300px;
+    overflow: hidden;
+    transition: all 0.7s;
+    width: 600px;
+}
+
+.newsTemplate h3 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px; /* Empuja el título hacia abajo */
+    align-self: center; 
+    color: white;
+    z-index: 20;
+}
+
+.newsTemplate::after {
+    content: ''; /* Obligatorio para pseudo-elementos */
+    position: absolute; /* Posición absoluta para superponerlo */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* Gradiente de negro transparente a negro sólido */
+}
+
+.newsTemplate:hover {
+    transform: scale(1.1);
+}

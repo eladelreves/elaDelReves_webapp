@@ -107,7 +107,7 @@ div#arrow {
 	height: 3vmin;
 	box-sizing: border-box;
 	position: sticky;
-	top: 750px;
+	top: 800px;
     margin: auto;
 	transform: rotate(-225deg);
     cursor: pointer;
