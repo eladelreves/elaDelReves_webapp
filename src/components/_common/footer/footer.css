@@ -1,0 +1,119 @@
+/*
+    ----------------------------------------------------------------
+        Footer styles
+    ----------------------------------------------------------------
+*/
+footer {
+    background-color: #121212;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 300px;
+    padding: 25px 0;
+    width: 100%;
+}
+
+footer a {color: white;}
+
+
+
+/*
+    ----------------------------------------------------------------
+        Footer first section (3 parts)
+    ----------------------------------------------------------------
+*/
+footer #footerData {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+footer #footerData > div, #footerData > a {
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer #footerData > div:first-child,
+footer #footerData > div:last-child {
+    width: 300px;
+}
+
+footer #footerData h4 {
+    text-decoration: underline;
+}
+
+/*
+    ----------------------------------------------------------------
+        Legal Pages Div
+    ----------------------------------------------------------------
+*/
+#info a {color: #939393;}
+
+#info a:hover {color: white;}
+
+/*
+    ----------------------------------------------------------------
+        Img and Link to go top
+    ----------------------------------------------------------------
+*/
+#goToTopLink {align-items: center;}
+
+#goToTopLink span {
+    border: 3px solid;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: all 0.5s;
+    width: 35px;
+}
+
+#goToTopLink span:hover {
+    color: var(--elaGreen);
+}
+
+#goToTopLink img {
+    width: 150px;
+}
+
+/*
+    ----------------------------------------------------------------
+        Contact Data
+    ----------------------------------------------------------------
+*/
+#contactData h4{text-align: right;}
+
+#contactData > div {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#contactData div span:first-child {margin-right: 10px;}
+
+
+
+/*
+    ----------------------------------------------------------------
+        Copyright line
+    ----------------------------------------------------------------
+*/
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 25px;
+}
+
+#copyright a {
+    margin-left: 5px;
+    text-decoration: underline;
+}

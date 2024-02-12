@@ -1,0 +1,9 @@
+#videosContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: auto;
+    padding: 50px 0;
+    width: 100%;
+}
