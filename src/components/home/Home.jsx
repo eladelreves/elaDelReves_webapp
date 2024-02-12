@@ -22,6 +22,10 @@ export function Home({ config }) {
         introContainer.scrollIntoView({ behavior: 'smooth', block: 'start'});
     };
 
+    const setRef = (element) => {
+        if (element) elementsRef.current.push(element);
+    };
+
     useEffect(() => {
         const logo = logoRef.current;
         const h2 = h2Ref.current;
@@ -86,39 +90,39 @@ export function Home({ config }) {
             </div>
             
             <div id='introContainer'>
-                <h1 ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">
+                <h1 ref={setRef} className="animate-on-scroll">
                     ¡Cambiemos la historia juntos: <span className='elaGreen'>ELA</span> del Revés!
                 </h1>
                 <section>
-                    <p ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">
+                    <p ref={setRef} className="animate-on-scroll">
                         El proyecto en el que hemos estado trabajando es una iniciativa en colaboración con la <span className='elaGreen'>ELA</span> para crear una plataforma en línea que brinde recursos, información y apoyo a pacientes y familias afectados por la enfermedad.
                     </p>
 
-                    <p ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">
+                    <p ref={setRef} className="animate-on-scroll">
                         La idea de este proyecto surgió como una forma de mejorar la calidad de vida de las personas que viven con la <span className='elaGreen'>ELA</span>. Queríamos crear una plataforma en línea que brindara recursos y apoyo a la comunidad de la <span className='elaGreen'>ELA</span> en todo el mundo, con el fin de mejorar su calidad de vida y su bienestar.
                     </p>
 
-                    <p ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">
+                    <p ref={setRef} className="animate-on-scroll">
                         La clase de marketing ha estado trabajando en la promoción de la plataforma en línea y en la creación de una estrategia de marketing efectiva para llegar a la comunidad de la <span className='elaGreen'>ELA</span>. Han estado desarrollando campañas de concientización en las redes sociales y en otros canales de marketing, con el fin de atraer a más personas a la plataforma y aumentar su alcance.
                     </p>
                 </section>
             </div>
 
             <div id='laEla'>
-                <h2 ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">La <span className='elaGreen'>ELA</span></h2>
+                <h2 ref={setRef} className="animate-on-scroll">La <span className='elaGreen'>ELA</span></h2>
                 <section>
-                    <p ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">"Frase aleatoria curiosa del <span className='elaGreen'>ELA</span> cogida desde Base de Datos"</p>
-                    <img id='elaDay' ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll" src={config.imagePath + 'elaDay.png'}  alt="" />
-                    <p ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">
+                    <p ref={setRef} className="animate-on-scroll">"Frase aleatoria curiosa del <span className='elaGreen'>ELA</span> cogida desde Base de Datos"</p>
+                    <img id='elaDay' ref={setRef} className="animate-on-scroll" src={config.imagePath + 'elaDay.png'}  alt="" />
+                    <p ref={setRef} className="animate-on-scroll">
                         Los <span className='elaGreen'>objetivos</span> y <span className='elaGreen'>metas</span> del proyecto son mejorar la calidad de vida de las personas afectadas por la <span className='elaGreen'>ELA</span>, brindar recursos y apoyo a la comunidad de la <span className='elaGreen'>ELA</span> en todo el mundo y aumentar la concientización sobre la enfermedad y su impacto en la sociedad. Además, queremos fomentar la colaboración y el intercambio de información entre los pacientes y los profesionales de la salud para mejorar el tratamiento y la atención de la <span className='elaGreen'>ELA</span>.
                     </p>
                 </section>
             </div>
 
             <div id='Blog'>
-                <h2 ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">El <span className='elaGreen'>blog</span></h2>
+                <h2 ref={setRef} className="animate-on-scroll">El <span className='elaGreen'>blog</span></h2>
                 <section>
-                    <p ref={(element) => elementsRef.current.push(element)} className="animate-on-scroll">Carrusel de fotos de blog que vayan pasando</p>
+                    <p ref={setRef} className="animate-on-scroll">Carrusel de fotos de blog que vayan pasando</p>
                 </section>
             </div>
         </>
