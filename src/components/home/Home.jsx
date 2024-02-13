@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './home.css';
 import './joinButton.css';
+import { News } from './../blog/news/News' 
 import PropTypes from 'prop-types';
 import { changePage } from '../../services/changePage';
 
@@ -125,9 +126,12 @@ export function Home({ config }) {
 
             <div id='Blog'>
                 <h2 ref={setRef} className="animate-on-scroll">El <span className='elaGreen'>blog</span></h2>
-                <section>
-                    <p ref={setRef} className="animate-on-scroll">Carrusel de fotos de blog que vayan pasando</p>
-                </section>
+                <div id='newsSlider'>
+                    <News imgUrl={config.imagePath+'news/matchDay.png'} title={'Torneo Benéfico Futsal'}></News>
+                    <News imgUrl={config.imagePath+'news/laismoEla.png'} title={'LA ELA vs EL ELA'}></News>
+                    <News imgUrl={config.imagePath+'news/stephen-hawking.jpg'} title={'Stephen Hawking, ejemplo de lucha'}></News>
+                    <News imgUrl={config.imagePath+'news/adela.png'} title={'¡Descubre nuevas formas de ayudar con ADELA!'}></News>
+                </div>
             </div>
 
             <div id='Unete'>
