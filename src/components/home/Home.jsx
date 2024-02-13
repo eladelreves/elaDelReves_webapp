@@ -125,6 +125,25 @@ export function Home({ config }) {
                     <p ref={setRef} className="animate-on-scroll">Carrusel de fotos de blog que vayan pasando</p>
                 </section>
             </div>
+
+            <div id='Unete'>
+                <h2>Únete a la <span className='elaGreen'>causa</span></h2>
+                <section>
+                    <p>Puedes aportar tu pequeño grano de arena tan solo enviándonos un vídeo con el reto que te proponemos en el apartado de nuestra página: <a href=""><span className='elaGreen'>Únete</span></a>. Tu participación puede marcar la diferencia y ayudar a aumentar la conciencia sobre la lucha contra el ELA. ¡Únete a nosotros en esta importante causa y demuestra tu apoyo dándote la vuelta a la camiseta!</p>
+                </section>
+                
+                <br />
+                <button class="btnUnete desLog" title="Registrarse">
+                ÚNETE
+                    <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H24V24H0z" fill="none"></path>
+                        <path
+                        d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z">
+                        </path>
+                    </svg>
+                </button>
+                <br />
+            </div>
         </>
     );
 }

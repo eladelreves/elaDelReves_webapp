@@ -3,7 +3,7 @@
         Home styles
     ----------------------------------------------------------------
 */
-#stickyContainer, #introContainer, #laEla, #Blog {
+#stickyContainer, #introContainer, #laEla, #Blog, #Unete {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +78,7 @@ p {
         La Ela Section
     ----------------------------------------------------------------
 */
-#laEla h2, #Blog h2{
+#laEla h2, #Blog h2, #Unete h2,{
     font-size: 25pt;
     margin-top: 50px;
     margin-bottom: 25px;
@@ -149,4 +149,46 @@ div#arrow {
 		transform: scale(.8);
 	}
 	
+}
+
+
+
+/*
+    ----------------------------------------------------------------
+        Join Button
+    ----------------------------------------------------------------
+*/
+.btnUnete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #fff;
+    border-color: #ffe2e2;
+    border-style: solid;
+    border-radius: 35px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #95b863;
+    font-family: monospace;
+    transition: transform 400ms cubic-bezier(.68, -0.55, .27, 2.5), border-color 400ms ease-in-out, background-color 400ms ease-in-out;
+    cursor: pointer;
+    width: 200px;
+}
+
+.btnUnete:hover {
+    background-color: #eee;
+    transform: scale(105%);
+    animation: movingBorders 3s infinite;
+}
+
+.btnUnete svg {
+    fill: #95b863;
+} 
+
+.btnUnete:hover svg {
+    transform: scale(105%);
+    border-color: #ffd8d8;
+    animation: beatingHeart 1.2s infinite;
 }
