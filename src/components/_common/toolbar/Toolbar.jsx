@@ -12,7 +12,7 @@ export function Toolbar({ config }){
             <nav>
                 <ul>
                     <li><Link id='home' to="/"><span className='icon-home1'></span> Home</Link></li>
-                    <li><Link to="/">La Ela</Link></li>
+                    <li><Link id='laela' to="/laela">La Ela</Link></li>
                     <li><Link id='blog' to="/blog">Blog</Link></li>
 
                     <li><img src={config.imagePath + 'logo_main.png'} alt="Logo Principal Ela del Revés" /></li>

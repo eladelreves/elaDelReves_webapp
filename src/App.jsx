@@ -6,6 +6,7 @@ import { Footer } from './components/_common/footer/Footer.jsx'
 import { Home } from './components/home/Home.jsx'
 import { Blog } from './components/blog/Blog.jsx'
 import { Delreves } from './components/delreves/Delreves.jsx'
+import { Ela } from './components/laela/Ela.jsx'
 import { config } from './config.js'
 
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
             <Toolbar config={config}></Toolbar>
             <Routes>
                 <Route path='/' element={<Home config={config}/>}/>
+                <Route path='/laela' element={<Ela config={config}/>}/>
                 <Route path='/blog' element={<Blog config={config}/>}/>
                 <Route path='/delreves' element={<Delreves config={config}/>}/>
             </Routes>

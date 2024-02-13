@@ -10,8 +10,14 @@ export function changePage(page) {
         case 'home':
             document.title = "ElaDelReves - Home";
             break;
+        case 'ela':
+            document.title = "ElaDelReves - La Ela";
+            break;
         case 'blog':
             document.title = "ElaDelReves - Blog";
+            break;
+        case 'delreves':
+            document.title = "ElaDelReves - Del Revés";
             break;
         // Agrega más casos según las páginas que tengas
         default:
