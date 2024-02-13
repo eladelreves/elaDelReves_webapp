@@ -3,7 +3,7 @@
         Home styles
     ----------------------------------------------------------------
 */
-#stickyContainer, #introContainer, #laEla, #Blog, #Unete {
+#stickyContainer, #introContainer, #laEla, #Blog, #Unete, #DelReves {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@
     width: 85%;
 }
 
-#introContainer, #laEla, #Blog{border-bottom: .5px solid rgb(198, 198, 198) ;}
+#introContainer, #laEla, #Blog, #Unete{border-bottom: .5px solid rgb(198, 198, 198) ;}
 
 p {
     font-size: 16pt;
@@ -78,13 +78,13 @@ p {
         La Ela Section
     ----------------------------------------------------------------
 */
-#laEla h2, #Blog h2, #Unete h2,{
+#laEla h2, #Blog h2, #Unete h2, #DelReves h2{
     font-size: 25pt;
     margin-top: 50px;
     margin-bottom: 25px;
 }
 
-#laEla section p,#Blog section p {margin-bottom: 50px;}
+#laEla section p,#Blog section p, #Unete section p, #DelReves section p {margin-bottom: 50px;}
 
 #laEla section > p:first-child{text-align: center;}
 
@@ -95,7 +95,18 @@ p {
 	margin-bottom: 50px;
 }
 
+#imageContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+}
 
+#imageContainer p{
+    margin-left: 50px;
+    margin-top: 5%;
+}
 
 /*
     ----------------------------------------------------------------
