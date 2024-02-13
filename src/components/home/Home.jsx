@@ -133,10 +133,10 @@ export function Home({ config }) {
             <div id='Unete'>
                 <h2 ref={setRef} className="animate-on-scroll">Únete a la <span className='elaGreen'>causa</span></h2>
                 <section>
-                    <p ref={setRef} className="animate-on-scroll">Puedes aportar tu pequeño grano de arena tan solo enviándonos un vídeo con el reto que te proponemos en el apartado de nuestra página: <a href=""><span className='elaGreen'>Únete</span></a>. Tu participación puede marcar la diferencia y ayudar a aumentar la conciencia sobre la lucha contra el ELA. ¡Únete a nosotros en esta importante causa y demuestra tu apoyo dándote la vuelta a la camiseta!</p>
-                    <p ref={setRef} className="animate-on-scroll">Puedes contribuir significativamente a nuestra misión participando en nuestras campañas de concienciación y recaudación de fondos. Cada donación videográfica por pequeña que parezca, nos ayuda a financiar la investigación vital y el apoyo a las personas afectadas por el ELA. Juntos, podemos marcar la diferencia y trabajar hacia un futuro donde esta enfermedad ya no represente una amenaza. Únete a nuestra comunidad y sé parte del cambio que queremos ver en el mundo.</p>
+                    <p ref={setRef} className="animate-on-scroll">Puedes aportar tu pequeño grano de arena tan solo enviándonos un vídeo con el reto que te proponemos en el apartado de nuestra página: <a href=""><span className='elaGreen'>Únete</span></a>. Tu participación puede marcar la diferencia y ayudar a aumentar la conciencia sobre la lucha contra el <span className='elaGreen'>ELA</span>. ¡Únete a nosotros en esta importante causa y demuestra tu apoyo dándote la vuelta a la camiseta!</p>
+                    <p ref={setRef} className="animate-on-scroll">Puedes contribuir significativamente a nuestra misión participando en nuestras campañas de concienciación y recaudación de fondos. Cada donación videográfica por pequeña que parezca, nos ayuda a financiar la investigación vital y el apoyo a las personas afectadas por el <span className='elaGreen'>ELA</span>. Juntos, podemos marcar la diferencia y trabajar hacia un futuro donde esta enfermedad ya no represente una amenaza. Únete a nuestra comunidad y sé parte del cambio que queremos ver en el mundo.</p>
                 </section>
-                <button ref={setRef} class="btnUnete desLog animate-on-scroll" title="Registrarse">
+                <button ref={setRef} className="btnUnete desLog animate-on-scroll" title="Registrarse">
                 ÚNETE
                     <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0H24V24H0z" fill="none"></path>
@@ -150,7 +150,7 @@ export function Home({ config }) {
             <div id="DelReves">
                 <h2 ref={setRef} className="animate-on-scroll">Del <span className='elaGreen'>Revés</span></h2>
                 <section>
-                    <p ref={setRef} className="animate-on-scroll">¡Únete a nuestra comunidad en delReves y comparte tu momento de apoyo! Sube tu video dándote la vuelta a la camiseta o a una prenda y sé parte del movimiento para aumentar la conciencia sobre el ELA. Juntos, podemos hacer una diferencia.</p>
+                    <p ref={setRef} className="animate-on-scroll">¡Únete a nuestra comunidad en delReves y comparte tu momento de apoyo! Sube tu video dándote la vuelta a la camiseta o a una prenda y sé parte del movimiento para aumentar la conciencia sobre el <span className='elaGreen'>ELA</span>. Juntos, podemos hacer una diferencia.</p>
                     <p ref={setRef} className="animate-on-scroll">Insertar video aleatorio de la red social aquí</p>
                 </section>
             </div>
