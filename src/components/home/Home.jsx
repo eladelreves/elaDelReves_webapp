@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react';
 import './home.css';
+import './joinButton.css';
 import PropTypes from 'prop-types';
 import { changePage } from '../../services/changePage';
 
 Home.propTypes = {
     config: PropTypes.object
 };
-
 
 export function Home({ config }) {
     const logoRef = useRef(null);
@@ -136,8 +136,8 @@ export function Home({ config }) {
                     <p ref={setRef} className="animate-on-scroll">Puedes aportar tu pequeño grano de arena tan solo enviándonos un vídeo con el reto que te proponemos en el apartado de nuestra página: <a href=""><span className='elaGreen'>Únete</span></a>. Tu participación puede marcar la diferencia y ayudar a aumentar la conciencia sobre la lucha contra el <span className='elaGreen'>ELA</span>. ¡Únete a nosotros en esta importante causa y demuestra tu apoyo dándote la vuelta a la camiseta!</p>
                     <p ref={setRef} className="animate-on-scroll">Puedes contribuir significativamente a nuestra misión participando en nuestras campañas de concienciación y recaudación de fondos. Cada donación videográfica por pequeña que parezca, nos ayuda a financiar la investigación vital y el apoyo a las personas afectadas por el <span className='elaGreen'>ELA</span>. Juntos, podemos marcar la diferencia y trabajar hacia un futuro donde esta enfermedad ya no represente una amenaza. Únete a nuestra comunidad y sé parte del cambio que queremos ver en el mundo.</p>
                 </section>
-                <button ref={setRef} className="btnUnete desLog animate-on-scroll" title="Registrarse">
-                ÚNETE
+                <button ref={setRef} className="joinButton animate-on-scroll" title="Registrarse">
+                    Únete
                     <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0H24V24H0z" fill="none"></path>
                         <path
