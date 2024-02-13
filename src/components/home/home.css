@@ -108,6 +108,10 @@ p {
     margin-top: 5%;
 }
 
+
+#Unete a{
+    text-decoration: underline;
+}
 /*
     ----------------------------------------------------------------
         Scroll Down Arrow Element
@@ -182,7 +186,6 @@ div#arrow {
     font-size: 25px;
     font-weight: 900;
     color: #95b863;
-    font-family: monospace;
     transition: transform 400ms cubic-bezier(.68, -0.55, .27, 2.5), border-color 400ms ease-in-out, background-color 400ms ease-in-out;
     cursor: pointer;
     width: 200px;
