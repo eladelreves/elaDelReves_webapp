@@ -1,0 +1,24 @@
+#introContainer, #elaSymptoms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: auto;
+    text-align: center;
+    width: 85%;
+}
+
+#introContainer{border-bottom: .5px solid rgb(198, 198, 198);}
+
+#introContainer > p {
+    font-size: 16pt;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+#elaSymptoms h2{
+    font-size: 22pt;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}

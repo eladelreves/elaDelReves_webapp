@@ -15,7 +15,7 @@ export function Blog({ config }){
 
     return(
         <>
-            <h2>Últimas <span className='elaGreen'>Noticias</span></h2>
+            <h2 id='newsTitle'>Últimas <span className='elaGreen'>Noticias</span></h2>
             <div id='newsContainer'>
                 <News imgUrl={config.imagePath+'news/matchDay.png'} title={'Torneo Benéfico Futsal'}></News>
                 <News imgUrl={config.imagePath+'news/laismoEla.png'} title={'LA ELA vs EL ELA'}></News>
