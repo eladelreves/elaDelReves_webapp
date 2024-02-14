@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { changePage } from '../../services/changePage';
 import './unete.css';
+import { UneteIntroSection } from './uneteSections/UneteIntroSection';
+import { Ayuda } from './uneteSections/AyudaSection';
+import { Register } from './uneteSections/RegistrateSection';
 
 Unete.propTypes = {
     config: PropTypes.object
@@ -17,8 +20,7 @@ export function Unete({ config }){
     return(
         <>
             <section id='join-intro-container'>
-                <h2>¡Démosle la <span className='elaGreen'>vuelta</span>!</h2>
-                <p>La <span className='elaGreen'>ELA</span> puede ser <span className='elaGreen'>implacable</span>, pero nuestra <span className='elaGreen'>determinación</span> es <span className='elaGreen'>inquebrantable</span>. <br /> Únete a nuestra causa y enfrentemos juntos este desafío con <span className='elaGreen'>fuerza</span>, <span className='elaGreen'>coraje</span> y <span className='elaGreen'>esperanza</span>.</p>
+                <UneteIntroSection></UneteIntroSection>
             </section>
 
             <section>
@@ -43,8 +45,7 @@ export function Unete({ config }){
             </section>
 
             <section>
-                <h2>¿Cómo ayudas al <span className='elaGreen'>registrarte</span>?</h2>
-                <p>Al registrarte en nuestra página web o app móvil, estás apoyando activamente la lucha contra la ELA. Cada registro activará una donación de las empresas colaboradoras a las asociaciones que trabajan en la lucha contra la enfermedad, lo que permitirá financiar proyectos y servicios para mejorar la calidad de vida de las personas afectadas.</p>
+                <Register></Register>
             </section>
         </>
     )
