@@ -1,3 +1,5 @@
+import { animateOnScroll } from './animate-on-scroll'
+
 export function changePage(page) {
     // Eliminar la clase 'selectedLi' de todos los elementos
     const menuItems = document.querySelectorAll('header nav ul li a');
@@ -23,6 +25,8 @@ export function changePage(page) {
         default:
             break;
     }
+
+    animateOnScroll();
 
     // Agregar la clase 'selectedLi' al elemento correspondiente a la página actual
     const currentPageElement = document.getElementById(page);

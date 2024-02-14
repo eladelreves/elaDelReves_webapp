@@ -1,0 +1,90 @@
+#stickyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: auto;
+    text-align: center;
+    width: 85%;
+}
+
+#stickyContainer > div {
+    height: 1850px;
+    text-align: center;
+}
+
+#stickyContainer img {
+    filter: drop-shadow(16px 7px 8px #939393);
+    margin-top: 100px;
+    padding: 20px;
+
+    position: sticky;
+    top: 200px;
+
+    width: 850px;
+}
+
+#stickyContainer h2{
+    margin: auto;
+
+    position: sticky;
+    top: 700px;
+
+    width: 100%;
+}
+
+
+
+/*
+    ----------------------------------------------------------------
+        Scroll Down Arrow Element
+    ----------------------------------------------------------------
+*/
+div#arrow {
+	width: 3vmin;
+	height: 3vmin;
+	box-sizing: border-box;
+	position: sticky;
+	top: 750px;
+    margin: auto;
+	transform: rotate(-225deg);
+    cursor: pointer;
+	
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-width: .5vmin .5vmin 0 0;
+		border-style: solid;
+		border-color: black;
+		transition: .3s ease;
+		display: block;
+		transform-origin: 100% 0;
+	}
+
+	
+	&:after {
+		content: '';
+		float: left;
+		position: relative;
+		top: -108%;
+		width: 100%;
+		height: 101%;
+		border-width: 0 .5vmin 0 0;
+		border-style: solid;
+		border-color: black;
+		transform-origin: 100% 0;
+		transition:.3s ease;
+	}
+	
+	&:hover::after {
+		transform: rotate(45deg);
+		border-color: #68B54C;
+		height: 120%;
+	}
+	&:hover::before {
+		border-color: #68B54C;
+		transform: scale(.8);
+	}
+}

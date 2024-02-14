@@ -8,23 +8,19 @@ import { Blog } from './components/blog/Blog.jsx'
 import { Delreves } from './components/delreves/Delreves.jsx'
 import { Ela } from './components/laela/Ela.jsx'
 import { config } from './config.js'
-import { animateOnScroll } from './services/animate-on-scroll'
-import { useEffect } from 'react'
 
 export function App() {
-    useEffect(() => {
-        animateOnScroll();
-    },[])
-
     return (
         <>
             <Toolbar config={config}></Toolbar>
+
             <Routes>
                 <Route path='/' element={<Home config={config}/>}/>
                 <Route path='/laela' element={<Ela config={config}/>}/>
                 <Route path='/blog' element={<Blog config={config}/>}/>
                 <Route path='/delreves' element={<Delreves config={config}/>}/>
             </Routes>
+
             <Footer config={config}></Footer>
         </>
     )

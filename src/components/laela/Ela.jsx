@@ -30,9 +30,9 @@ export function Ela({ config }){
                 <p>
                     Los síntomas incluyen debilidad muscular, dificultad para hablar y tragar, problemas respiratorios, calambres musculares y espasmos en brazos, hombros y lengua, llanto, risa o bostezos inapropiados y cambios cognitivos y de comportamiento.
                 </p>
-                <div id='video-container'>
-                    <iframe src="https://www.youtube.com/embed/tFUWFustQ5w?si=YeikcxSMIjC1dVM9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum repellendus perspiciatis dignissimos pariatur modi laudantium quo, illo harum vitae consectetur sequi aspernatur repudiandae laboriosam voluptatem, quas cum voluptas accusamus cumque mollitia nemo tenetur facere, culpa sapiente. Ea aperiam aspernatur obcaecati ab architecto quas repellendus, in veniam soluta nostrum, eius illo praesentium ad explicabo asperiores odio ut assumenda, itaque consectetur sunt dolorum. Officia, incidunt praesentium! Nulla et nemo reprehenderit fugiat excepturi incidunt nobis provident architecto. Quae dolorum exercitationem iste accusantium quos.</p>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tFUWFustQ5w?si=G4VbFNjUCTffHsyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
                 </div>
             </section>
 

@@ -19,7 +19,7 @@ export function NewsSlider({ config }){
 
     return(
         <>
-            <div className="scroller" data-direction="left" data-speed="slow">
+            <div className="scroller animate-on-scroll" data-direction="left" data-speed="slow">
                 <div className="scroller__inner">
                     <News imgUrl={config.imagePath+'news/matchDay.png'} title={'Torneo Benéfico Futsal'}></News>
                     <News imgUrl={config.imagePath+'news/laismoEla.png'} title={'LA ELA vs EL ELA'}></News>

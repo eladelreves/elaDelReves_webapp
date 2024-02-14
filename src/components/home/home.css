@@ -3,7 +3,8 @@
         Home styles
     ----------------------------------------------------------------
 */
-#stickyContainer, #introSection, #laEla, #Blog, #Unete, #DelReves {
+section {
+    border-bottom: .5px solid rgb(198, 198, 198) ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,42 +15,19 @@
     width: 85%;
 }
 
-#introSection, #laEla, #Blog, #Unete{border-bottom: .5px solid rgb(198, 198, 198) ;}
+section h2{
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+section div p {
+    margin-bottom: 50px;
+}
 
 p {
     font-size: 16pt;
     text-align: justify;
-}
-
-
-/*
-    ----------------------------------------------------------------
-        Scroll Down Logo Animation
-    ----------------------------------------------------------------
-*/
-#stickyContainer > div {
-    height: 1850px;
-    text-align: center;
-}
-
-#stickyContainer img {
-    filter: drop-shadow(16px 7px 8px #939393);
-    margin-top: 100px;
-    padding: 20px;
-
-    position: sticky;
-    top: 200px;
-
-    width: 850px;
-}
-
-#stickyContainer h2{
-    margin: auto;
-
-    position: sticky;
-    top: 700px;
-
-    width: 100%;
 }
 
 
@@ -77,14 +55,6 @@ p {
         La Ela Section
     ----------------------------------------------------------------
 */
-#laEla h2, #Blog h2, #Unete h2, #DelReves h2{
-    font-size: 25pt;
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
-
-#laEla div p,#Blog section p, #Unete div p, #DelReves div p {margin-bottom: 50px;}
-
 #laEla div > p:first-child{text-align: center;}
 
 #laEla #elaDay {
@@ -105,63 +75,4 @@ p {
 #imageContainer p{
     margin-left: 50px;
     margin-top: 5%;
-}
-
-#Unete a{
-    text-decoration: underline;
-}
-
-
-
-/*
-    ----------------------------------------------------------------
-        Scroll Down Arrow Element
-    ----------------------------------------------------------------
-*/
-div#arrow {
-	width: 3vmin;
-	height: 3vmin;
-	box-sizing: border-box;
-	position: sticky;
-	top: 800px;
-    margin: auto;
-	transform: rotate(-225deg);
-    cursor: pointer;
-	
-	&::before {
-		content: '';
-		width: 100%;
-		height: 100%;
-		border-width: .5vmin .5vmin 0 0;
-		border-style: solid;
-		border-color: black;
-		transition: .3s ease;
-		display: block;
-		transform-origin: 100% 0;
-	}
-
-	
-	&:after {
-		content: '';
-		float: left;
-		position: relative;
-		top: -108%;
-		width: 100%;
-		height: 101%;
-		border-width: 0 .5vmin 0 0;
-		border-style: solid;
-		border-color: black;
-		transform-origin: 100% 0;
-		transition:.3s ease;
-	}
-	
-	&:hover::after {
-		transform: rotate(45deg);
-		border-color: #68B54C;
-		height: 120%;
-	}
-	&:hover::before {
-		border-color: #68B54C;
-		transform: scale(.8);
-	}
 }
