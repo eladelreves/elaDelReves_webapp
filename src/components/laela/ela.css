@@ -1,4 +1,9 @@
-#introContainer, #elaSymptoms{
+/*
+    ----------------------------------------------------------------
+        Intro Section
+    ----------------------------------------------------------------
+*/
+#intro-container, #ela-symptoms, #video-container, #ela-origin{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,16 +14,53 @@
     width: 85%;
 }
 
-#introContainer{border-bottom: .5px solid rgb(198, 198, 198);}
+#intro-container h1{
+    font-size: 30pt;
+    margin-top:50px;
+    margin-bottom: 25px;
+}
 
-#introContainer > p {
+#intro-container, #ela-symptoms, #ela-origin{border-bottom: .5px solid rgb(198, 198, 198);}
+
+#intro-container > p {
     font-size: 16pt;
     text-align: justify;
     margin-bottom: 30px;
 }
 
-#elaSymptoms h2{
+/*
+    ----------------------------------------------------------------
+        La Ela Symptoms
+    ----------------------------------------------------------------
+*/
+#ela-symptoms h2, #ela-origin h2{
     font-size: 22pt;
     margin-top: 50px;
     margin-bottom: 25px;
 }
+
+#video-container{
+    margin-top: 25px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+#video-container iframe{
+    width: 47%;
+    height: 400px;
+    border-radius: 5px;
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+
+#video-container p{
+    width: 49%;
+}
+
+/*
+    ----------------------------------------------------------------
+        La Ela Symptoms
+    ----------------------------------------------------------------
+*/
