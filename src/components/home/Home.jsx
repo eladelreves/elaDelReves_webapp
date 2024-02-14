@@ -1,9 +1,11 @@
 import { useEffect, useRef } from 'react';
 import './home.css';
 import './joinButton.css';
+import './image-slider.css';
 import { News } from './../blog/news/News' 
 import PropTypes from 'prop-types';
 import { changePage } from '../../services/changePage';
+//import { addAnimation } from '../../services/addAnimation';
 
 Home.propTypes = {
     config: PropTypes.object
@@ -18,6 +20,34 @@ export function Home({ config }) {
     useEffect(() => {
         changePage('home');
     }, []);
+
+    const scrollers = document.querySelectorAll(".scroller");
+
+    // If a user hasn't opted in for recuded motion, then we add the animation
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        addAnimation();
+    }
+
+    function addAnimation() {
+    scrollers.forEach((scroller) => {
+        // add data-animated="true" to every `.scroller` on the page
+        scroller.setAttribute("data-animated", true);
+
+        // Make an array from the elements within `.scroller-inner`
+        const scrollerInner = scroller.querySelector(".scroller__inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        // For each item in the array, clone it
+        // add aria-hidden to it
+        // add it into the `.scroller-inner`
+        scrollerContent.forEach((item) => {
+        const duplicatedItem = item.cloneNode(true);
+        duplicatedItem.setAttribute("aria-hidden", true);
+        scrollerInner.appendChild(duplicatedItem);
+        });
+    });
+    }
+
 
     const handleArrowClick = () => {
         const introContainer = document.getElementById('introContainer');
@@ -126,11 +156,13 @@ export function Home({ config }) {
 
             <div id='Blog'>
                 <h2 ref={setRef} className="animate-on-scroll">El <span className='elaGreen'>blog</span></h2>
-                <div id='newsSlider'>
-                    <News imgUrl={config.imagePath+'news/matchDay.png'} title={'Torneo Benéfico Futsal'}></News>
-                    <News imgUrl={config.imagePath+'news/laismoEla.png'} title={'LA ELA vs EL ELA'}></News>
-                    <News imgUrl={config.imagePath+'news/stephen-hawking.jpg'} title={'Stephen Hawking, ejemplo de lucha'}></News>
-                    <News imgUrl={config.imagePath+'news/adela.png'} title={'¡Descubre nuevas formas de ayudar con ADELA!'}></News>
+                <div class="scroller" data-direction="left" data-speed="slow">
+                    <div class="scroller__inner">
+                        <News imgUrl={config.imagePath+'news/matchDay.png'} title={'Torneo Benéfico Futsal'}></News>
+                        <News imgUrl={config.imagePath+'news/laismoEla.png'} title={'LA ELA vs EL ELA'}></News>
+                        <News imgUrl={config.imagePath+'news/stephen-hawking.jpg'} title={'Stephen Hawking, ejemplo de lucha'}></News>
+                        <News imgUrl={config.imagePath+'news/adela.png'} title={'¡Descubre nuevas formas de ayudar con ADELA!'}></News>
+                    </div>
                 </div>
             </div>
 
