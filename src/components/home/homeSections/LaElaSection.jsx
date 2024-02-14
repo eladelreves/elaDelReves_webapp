@@ -13,7 +13,7 @@ export function LaElaSection({ config }){
                 <p  className="animate-on-scroll">"Frase aleatoria curiosa del <span className='elaGreen'>ELA</span> cogida desde Base de Datos"</p>
 
                 <div id='imageContainer'>
-                    <img id='elaDay'  className="animate-on-scroll" src={config.imagePath + 'elaDay1.png'}  alt="Imagen de concienciacion de la enfermedad de la ELA en España" />
+                    <img id='elaDay'  className="animate-on-scroll" src={config.imagePath + 'elaDay.png'}  alt="Imagen de concienciacion de la enfermedad de la ELA en España" />
                     <p  className="animate-on-scroll">Cada día, en España, se diagnostican en promedio tres personas con <span className='elaGreen'>ELA</span>, una enfermedad devastadora que afecta a individuos y a sus familias en todo el país. Con el Día Mundial de la <span className='elaGreen'>ELA</span> el 21 de junio, es crucial recordar la importancia de la concienciación y el apoyo. A través de la educación y la solidaridad, podemos trabajar juntos para mejorar la calidad de vida de quienes viven con <span className='elaGreen'>ELA</span> y avanzar en la investigación hacia tratamientos y, eventualmente, una cura. ¡Únete a nosotros en esta lucha!</p>
                 </div>
 
