@@ -8,6 +8,7 @@ import { Home } from './components/home/Home.jsx'
 import { Blog } from './components/blog/Blog.jsx'
 import { Delreves } from './components/delreves/Delreves.jsx'
 import { Ela } from './components/laela/Ela.jsx'
+import { Unete } from './components/unete/Unete.jsx'
 import { Login } from './components/login/Login.jsx'
 import { config } from './config.js'
 
@@ -24,6 +25,7 @@ export function App() {
                 <Route path='/laela' element={<Ela config={config}/>}/>
                 <Route path='/blog' element={<Blog config={config}/>}/>
                 <Route path='/delreves' element={<Delreves config={config}/>}/>
+                <Route path='/unete' element={<Unete config={config}/>}/>
                 <Route path='/login' element={<Login config={config}/>}/>
             </Routes>
             

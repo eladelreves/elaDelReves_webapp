@@ -17,7 +17,7 @@ export function Toolbar({ config }){
 
                     <li><img src={config.imagePath + 'logo_main.png'} alt="Logo Principal Ela del Revés" /></li>
 
-                    <li><Link to="/">Únete</Link></li>
+                    <li><Link id='unete' to="/unete">Únete</Link></li>
                     <li><Link id='delreves' to="/delreves">Del Revés</Link></li>
                     <li><Link id='login' to="/login"><span className='icon-person'></span> Login</Link></li>
                 </ul>

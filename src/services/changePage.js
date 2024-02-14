@@ -21,6 +21,9 @@ export function changePage(page) {
         case 'delreves':
             document.title = "ElaDelReves - Del Revés";
             break;
+        case 'unete':
+            document.title = "ElaDelReves - Únete";
+            break;
         case 'login':
             document.title = "ElaDelReves - Login";
             break;

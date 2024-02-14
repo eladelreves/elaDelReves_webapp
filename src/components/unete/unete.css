@@ -1,0 +1,15 @@
+@keyframes rotate {
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+#join-intro-container h2 span.elaGreen {
+    display: inline-block;
+    animation: rotate 2s linear forwards; /* Duración de la animación */
+}
+
+#join-intro-container > p {
+    font-size: 18pt;
+    text-align: center;
+}
