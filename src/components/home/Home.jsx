@@ -15,18 +15,19 @@ export function Home({ config }) {
     const logoRef = useRef(null);
     const elementsRef = useRef([]);
     const h2Ref = useRef(null);
-    const arrowRef = useRef(null);
+    const arrowRef = useRef(null); 
+    let scrollers = document.querySelectorAll(".scroller");
 
     useEffect(() => {
         changePage('home');
+        scrollers = document.querySelectorAll(".scroller");
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && document.querySelector(".scroller[data-direction='left']")) {
+            if (!document.querySelector(".scroller[data-animated='true']")) {
+                addAnimation();
+            }
+        }
     }, []);
-
-    const scrollers = document.querySelectorAll(".scroller");
-
-    // If a user hasn't opted in for recuded motion, then we add the animation
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        addAnimation();
-    }
+    
 
     function addAnimation() {
     scrollers.forEach((scroller) => {
@@ -47,7 +48,6 @@ export function Home({ config }) {
         });
     });
     }
-
 
     const handleArrowClick = () => {
         const introContainer = document.getElementById('introContainer');
@@ -156,8 +156,8 @@ export function Home({ config }) {
 
             <div id='Blog'>
                 <h2 ref={setRef} className="animate-on-scroll">El <span className='elaGreen'>blog</span></h2>
-                <div class="scroller" data-direction="left" data-speed="slow">
-                    <div class="scroller__inner">
+                <div className="scroller" data-direction="left" data-speed="slow">
+                    <div className="scroller__inner">
                         <News imgUrl={config.imagePath+'news/matchDay.png'} title={'Torneo Benéfico Futsal'}></News>
                         <News imgUrl={config.imagePath+'news/laismoEla.png'} title={'LA ELA vs EL ELA'}></News>
                         <News imgUrl={config.imagePath+'news/stephen-hawking.jpg'} title={'Stephen Hawking, ejemplo de lucha'}></News>
