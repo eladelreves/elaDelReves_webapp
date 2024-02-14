@@ -3,7 +3,7 @@
         Intro Section
     ----------------------------------------------------------------
 */
-#intro-container, #ela-symptoms, #video-container, #ela-origin{
+#intro-container, #ela-symptoms, #video-container, #ela-origin, #ela-investigation, #ela-treatment, #ela-therapy{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,8 @@
 
 #intro-container, #ela-symptoms, #ela-origin{border-bottom: .5px solid rgb(198, 198, 198);}
 
-#intro-container > p {
+#intro-container > p, #ela-origin > p , #ela-investigation p, #ela-treatment p, #ela-treatment p, #ela-therapy p{
+    width: 100%;
     font-size: 16pt;
     text-align: justify;
     margin-bottom: 30px;
@@ -33,7 +34,7 @@
         La Ela Symptoms
     ----------------------------------------------------------------
 */
-#ela-symptoms h2, #ela-origin h2{
+#ela-symptoms h2, #ela-origin h2, #ela-treatment h2, #ela-therapy h2{
     font-size: 22pt;
     margin-top: 50px;
     margin-bottom: 25px;
@@ -61,6 +62,20 @@
 
 /*
     ----------------------------------------------------------------
-        La Ela Symptoms
+        La Ela List
+    ----------------------------------------------------------------
+*/
+.ela-list{
+    list-style: circle;
+    width: 100%;
+}
+
+.ela-list > li{
+    margin-left: 70px;
+}
+
+/*
+    ----------------------------------------------------------------
+        La Ela Treatment
     ----------------------------------------------------------------
 */

@@ -11,10 +11,27 @@
     --elaGreen: #95b863;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(219, 219, 219) ;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--elaGreen);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    color: var(--elaGreen);
+}
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
-    list-style: none;
     padding: 0;
     text-decoration: none;
     font-family: Poppins;

@@ -26,8 +26,10 @@ section div p {
 }
 
 p {
+    width: 100%;
     font-size: 16pt;
     text-align: justify;
+    margin-bottom: 30px;
 }
 
 

@@ -1,6 +1,6 @@
 .newsTemplate {
     border: 2px solid;
-    border-radius: 10px;
+    border-radius: 7px;
 	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
 
     background-image: url('/src/assets/media/img/news/matchDay.png');
