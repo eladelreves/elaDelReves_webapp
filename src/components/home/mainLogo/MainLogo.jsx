@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import './mainLogo.css'
 
 MainLogo.propTypes = {
     config: PropTypes.object
