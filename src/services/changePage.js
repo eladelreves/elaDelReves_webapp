@@ -12,7 +12,7 @@ export function changePage(page) {
         case 'home':
             document.title = "ElaDelReves - Home";
             break;
-        case 'ela':
+        case 'laela':
             document.title = "ElaDelReves - La Ela";
             break;
         case 'blog':
@@ -21,12 +21,16 @@ export function changePage(page) {
         case 'delreves':
             document.title = "ElaDelReves - Del Revés";
             break;
+        case 'login':
+            document.title = "ElaDelReves - Login";
+            break;
         // Agrega más casos según las páginas que tengas
         default:
             break;
     }
-
+    
     animateOnScroll();
+    window.scrollTo(0, 0);
 
     // Agregar la clase 'selectedLi' al elemento correspondiente a la página actual
     const currentPageElement = document.getElementById(page);

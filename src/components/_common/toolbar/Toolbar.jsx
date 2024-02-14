@@ -19,7 +19,7 @@ export function Toolbar({ config }){
 
                     <li><Link to="/">Únete</Link></li>
                     <li><Link id='delreves' to="/delreves">Del Revés</Link></li>
-                    <li><Link to="/"><span className='icon-person'></span> Login</Link></li>
+                    <li><Link id='login' to="/login"><span className='icon-person'></span> Login</Link></li>
                 </ul>
             </nav>
         </header>

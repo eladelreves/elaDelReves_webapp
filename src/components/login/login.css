@@ -1,0 +1,168 @@
+#backHome {
+    color: white;
+    font-size: 35px;
+
+    position: absolute;
+    bottom: 93%;
+    right: 96%;
+
+    transition: all 0.7s;
+}
+
+#backHome:hover {
+    color: black;
+}
+
+#login-body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(var(--elaGreen) 50%, white 50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: relative;
+}
+
+#login-container {
+    border-radius: 5px;
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 500px;
+    margin: auto;
+
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden;
+    width: 800px;
+}
+
+#login-form {
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 500px;
+    margin: auto;
+
+    width: 50%;
+}
+
+#login-form h2 {
+    color: var(--elaGreen);
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#login-form label {
+    font-size: 20px;
+}
+
+#login-form input {
+    border: 0;
+    padding: 5px;
+    outline: none;
+    width: 80%;
+}
+
+#login-form #loginEmail {
+    border: 1px solid;
+    border-radius: 20px;
+
+    margin-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#loginPasswordDiv {
+    background-color: white;
+    border: 1px solid;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 80%;
+}
+
+#loginPasswordDiv span {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--elaGreen);
+}
+
+#login-form > a {
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+#login-logo {
+    background-color: var(--elaGreen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter:blur(20px) brightness(110%);
+
+    height: 500px;
+    width: 50%;
+}
+
+#login-logo img {
+    width: 90%;
+    filter: drop-shadow(5px 5px 5px #000000);
+
+    transition: all 0.7s;
+}
+
+#login-logo img:hover {
+    transform: scale(1.1);
+}
+
+#createAccount {
+    width: 100%;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(2px 2px 2px #414040);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#createAccount a {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+#createAccount a:hover {
+    text-decoration: none;
+}
+
+#login-form button[type="submit"] {
+    border: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.7s;
+    width: 80%;
+}
+
+#login-form button[type="submit"]:hover {
+    color: white;
+    background-color: var(--elaGreen);
+}
