@@ -20,7 +20,7 @@
     height: 300px;
     overflow: hidden;
     transition: all 0.7s;
-    width: 600px;
+    width: 400px;
 }
 
 .newsTemplate h3 {
@@ -42,6 +42,4 @@
     background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* Gradiente de negro transparente a negro sólido */
 }
 
-.newsTemplate:hover {
-    transform: scale(1.1);
-}
+.newsTemplate:hover {transform: scale(1.05);}

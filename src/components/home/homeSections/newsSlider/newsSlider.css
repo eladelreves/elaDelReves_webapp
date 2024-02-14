@@ -6,7 +6,7 @@
 .scroller {
     max-width: 100%;
 }
-  
+
 .scroller__inner {
     padding-block: 1rem;
     display: flex;

@@ -3,7 +3,7 @@
         Home styles
     ----------------------------------------------------------------
 */
-#stickyContainer, #introContainer, #laEla, #Blog, #Unete, #DelReves {
+#stickyContainer, #introSection, #laEla, #Blog, #Unete, #DelReves {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,13 +14,12 @@
     width: 85%;
 }
 
-#introContainer, #laEla, #Blog, #Unete{border-bottom: .5px solid rgb(198, 198, 198) ;}
+#introSection, #laEla, #Blog, #Unete{border-bottom: .5px solid rgb(198, 198, 198) ;}
 
 p {
     font-size: 16pt;
     text-align: justify;
 }
-
 
 
 /*
@@ -60,13 +59,13 @@ p {
         Intro Section
     ----------------------------------------------------------------
 */
-#introContainer > h1 {
+#introSection > h1 {
     font-size: 30pt;
     margin-top:50px;
     margin-bottom: 25px;
 }
 
-#introContainer > section > p {
+#introSection > div > p {
     margin-top: 25px;
     margin-bottom: 50px;
 }
@@ -84,9 +83,9 @@ p {
     margin-bottom: 25px;
 }
 
-#laEla section p,#Blog section p, #Unete section p, #DelReves section p {margin-bottom: 50px;}
+#laEla div p,#Blog section p, #Unete div p, #DelReves div p {margin-bottom: 50px;}
 
-#laEla section > p:first-child{text-align: center;}
+#laEla div > p:first-child{text-align: center;}
 
 #laEla #elaDay {
 	width: 800px;
@@ -108,10 +107,12 @@ p {
     margin-top: 5%;
 }
 
-
 #Unete a{
     text-decoration: underline;
 }
+
+
+
 /*
     ----------------------------------------------------------------
         Scroll Down Arrow Element
@@ -163,5 +164,4 @@ div#arrow {
 		border-color: #68B54C;
 		transform: scale(.8);
 	}
-	
 }

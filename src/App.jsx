@@ -8,8 +8,14 @@ import { Blog } from './components/blog/Blog.jsx'
 import { Delreves } from './components/delreves/Delreves.jsx'
 import { Ela } from './components/laela/Ela.jsx'
 import { config } from './config.js'
+import { animateOnScroll } from './services/animate-on-scroll'
+import { useEffect } from 'react'
 
 export function App() {
+    useEffect(() => {
+        animateOnScroll();
+    },[])
+
     return (
         <>
             <Toolbar config={config}></Toolbar>

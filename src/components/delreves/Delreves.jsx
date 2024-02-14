@@ -17,7 +17,8 @@ export function Delreves({ config }){
         <>
             <h2>Últimos <span className='elaGreen'>Videos</span></h2>
             <div id='videosContainer'>
-                <Video config={config}></Video>
+                <Video user={'@eladelreves'} video={config.videoPath + 'wantToHelp.mp4'}></Video>
+                <Video user={'@eladelreves'} video={config.videoPath + 'interview12October.mp4'}></Video>
             </div>
         </>
     )

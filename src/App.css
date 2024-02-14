@@ -3,9 +3,9 @@
     src: url(assets/media/font/Poppins-Regular.ttf);
 }
 
-.elaGreen {
-    color: var(--elaGreen);
-}
+.elaGreen { color: var(--elaGreen); }
+
+.underline { text-decoration: underline; }
 
 :root {
     --elaGreen: #95b863;
