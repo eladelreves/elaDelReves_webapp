@@ -42,7 +42,7 @@ export function Home({ config }) {
             </section>
 
             <section id="DelReves">
-                <DelrevesSection></DelrevesSection>
+                <DelrevesSection config={config}></DelrevesSection>
             </section>
         </>
     );
