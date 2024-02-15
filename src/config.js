@@ -1,4 +1,4 @@
 export const config = {
-    imagePath: '/src/assets/media/img/',
-    videoPath: '/src/assets/media/videos/'
+    imagePath: '/img/',
+    videoPath: '/videos/'
 };
