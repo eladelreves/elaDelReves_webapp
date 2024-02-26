@@ -27,6 +27,9 @@ export function changePage(page) {
         case 'login':
             document.title = "ElaDelReves - Login";
             break;
+        case 'register':
+            document.title = "ElaDelReves - Register";
+            break;
         // Agrega más casos según las páginas que tengas
         default:
             break;

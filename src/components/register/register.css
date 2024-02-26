@@ -1,0 +1,20 @@
+
+#loginPasswordDivConfirm{
+    background-color: white;
+    border: 1px solid;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 50px;
+    overflow: hidden;
+    width: 80%;
+}
+
+#loginPasswordDivConfirm span {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--elaGreen);
+}

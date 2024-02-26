@@ -51,7 +51,7 @@ export function Login({ config }){
 
                     <div id='login-logo'>
                         <img src={config.imagePath + 'logo_all_white.png'} alt="" />
-                        <span id='createAccount'>¿No tienes cuenta? <br /><br /> <a href="">Crear cuenta</a></span>
+                        <span id='createAccount'>¿No tienes cuenta? <br /><br /> <Link to='/register'>Crear cuenta</Link></span>
                     </div>
                 </div>
             </div>
