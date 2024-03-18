@@ -11,15 +11,18 @@ import { Delreves } from './components/delreves/Delreves.jsx'
 import { Ela } from './components/laela/Ela.jsx'
 import { Unete } from './components/unete/Unete.jsx'
 import { Login } from './components/login/Login.jsx'
+import { Register } from './components/register/Register.jsx'
 import { config } from './config.js'
 
 export function App() {
     const location = useLocation();
     const isLoginPage = location.pathname === '/login';
+    const isRegisterPage = location.pathname === '/register';
+
 
     return (
         <>
-            {!isLoginPage && <Toolbar config={config} />}
+            {(!isLoginPage && !isRegisterPage) && <Toolbar config={config} />}
 
             <Routes>
                 <Route path='/' element={<Home config={config}/>}/>
@@ -33,9 +36,10 @@ export function App() {
                 <Route path='/delreves' element={<Delreves config={config}/>}/>
                 <Route path='/unete' element={<Unete config={config}/>}/>
                 <Route path='/login' element={<Login config={config}/>}/>
+                <Route path='/register' element={<Register config={config}/>}/>
             </Routes>
             
-            {!isLoginPage && <Footer config={config} />}
+            {(!isLoginPage && !isRegisterPage) && <Footer config={config} />}
         </>
     );
 }
